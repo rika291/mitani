@@ -1,0 +1,418 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html{
+	font-size: 62.5%;
+}
+body{
+
+	color: #000000;
+	font-family: "Gill Sans","Noto Sans CJK JP";
+	font-size: 1.4rem;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:gravscale;
+}
+
+a{
+	text-decoration: none;
+	color: #595757;
+}
+ul{
+	list-style: none;
+}
+li{
+	list-style: none;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+.text-center{
+	text-align: center;
+}
+.text-left{
+	text-align: left;
+}
+.text-right{
+	text-align: right;
+}
+.img_sp{
+	display: none;
+}
+/*-------------------------------------
+
+
+header
+
+---------------------------------------*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+background-color: #fff;
+	box-sizing: border-box;
+}
+.navigation{
+		position: sticky;
+		z-index: 500;
+		box-sizing: border-box;
+		width: 100%;
+	}
+
+.nav-button {
+  display: none;
+
+}
+.nav a {
+    font-size: 1.6rem;
+	text-transform: uppercase;
+  }
+.nav a:hover{
+	color: #ec5939; 
+}
+ .nav li {
+    display: inline-block;
+    margin: 0 20px;
+  }
+.nav li:last-of-type{
+	margin-right: 50px;
+}
+.logo{
+	margin-left: 50px;
+}
+.nav-wrap.open {
+  display: block;
+}
+.nav-wrap.close {
+  display: none;
+}
+
+
+/*------------------------------------------
+
+contact
+------------------------------------------*/
+.contact{
+	background-color: #f5d70c;
+	padding: 80px 0 144px;
+}
+
+.form_inner{
+	border:solid 5px #ec5939;
+	background-color: #fff;
+	margin: 0 160px;
+	padding:96px 0;
+}
+.contact_title{
+	color: #ec5939;
+	font-weight: bold;
+	font-size: 4.8rem;
+ 	margin-bottom: 80px;
+}
+.contact_sentence{
+	font-size: 1.8rem;
+	line-height: 36px;
+	width: 600px;
+	margin: 0 auto;
+	padding-bottom: 20px;
+}
+
+.contact_mail{
+	font-size: 2.2rem;
+	padding-bottom: 64px;
+}
+
+.notice{
+	margin: 20px 0 40px;
+	font-size: 1.4rem;
+}
+
+/*------------------------------------------
+
+php工房
+------------------------------------------*/
+
+
+#formWrap {
+	width:700px;
+	margin:0 auto;
+	font-size:1.4rem;
+}
+table.formTable{
+	width:100%;
+	margin:0 auto;
+	border-collapse:collapse;
+	
+}
+
+table.formTable td,table.formTable th{
+	border:1px solid #ccc;
+	padding:20px;
+	vertical-align: top;
+}
+table.formTable th{
+	font-size: 1.5rem;
+	width:30%;
+	background:#efefef;
+	text-align:left;
+}
+
+.form_btn{
+	margin-left: auto;
+    margin-right: auto;
+    display: table;
+
+}
+
+.submit{
+ 　position: relative;
+  padding: 13px 40px;
+  text-decoration: none;
+  color: #000;
+  background: #f5d70c;
+  border-radius: 4px;
+  box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), inset 0 -2px 0 rgba(0, 0, 0, 0.05);
+  font-weight: bold;
+font-size: 1.5rem;
+  border: solid 3px #d27d00;
+  cursor: pointer;
+}
+.submit:hover{
+	background: #fff;
+}
+
+/*-------------------------------------------------
+
+footer
+
+-------------------------------------------------*/
+.hr{
+	 height: 1px;
+  	border: none;
+	width: 80%;
+	text-align: center;
+	margin: 0 auto;
+}
+.logo_footer{
+	margin: 64px 0;
+	text-align:center;
+}
+.footer_nav{
+	justify-content: center;
+	display: flex;
+	margin-bottom: 104px;
+	
+}
+.footer_nav_title{
+	text-align: center;
+	display:inline-block;
+	font-size: 1.8rem;
+	font-weight: 500;
+	padding:  30px 30px 25px 30px;
+}
+.footer_nav_title a:hover{
+	color: #ec5939; 
+}
+
+.copyrights{
+	text-align: center;
+	margin-bottom: 32px;
+}
+
+@media screen and (min-width: 481px) {
+  .nav-wrap {
+    display: block !important;
+  }
+}
+@media screen and (max-width: 920px){
+	
+	.nav li{
+		    margin: 0 10px;
+	}
+	.nav a{
+		    font-size: 1.2rem;
+	}
+	.site_title{
+		    top:10%;
+	}
+}
+@media screen and (max-width: 720px) {
+
+
+#wrapper{
+width:100%;
+overflow-x: hidden !important;
+}
+.img_sp{
+		display: block;
+	}	
+.img_pc{
+		display: none;
+	}
+
+.nav-wrap.close {
+    display: none;
+}
+.nav-wrap.open {
+    display: block;
+}
+
+.content {
+  padding: 20px;
+}
+.nav-button {
+    display: block;
+    cursor: pointer;
+  }
+.nav-wrap {
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: none;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: auto;
+	}
+  .nav {
+      height: 100%;
+      position: relative;
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
+ .nav li {
+      display: block;
+      margin: 2em;
+	}
+	.nav li:last-of-type{
+		margin-bottom: 100px;
+	}
+ .nav a {
+        color: #fff;
+        font-size: 18px;
+      }
+  /*メニューボタンのエフェクト*/
+  .nav-button,
+  .nav-button span {
+    display: inline-block;
+    transition: all 0.4s;
+    box-sizing: border-box;
+  }
+  .nav-button {
+    z-index: 20;
+    position: relative;
+    width: 40px;
+    height: 36px;
+  }
+  .nav-button span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #ec5939;
+    border-radius: 4px;
+  }
+  .nav-button span:nth-of-type(1) {
+    top: 0;
+  }
+  .nav-button span:nth-of-type(2) {
+    top: 16px;
+  }
+  .nav-button span:nth-of-type(3) {
+    bottom: 0;
+  }
+  .nav-button.active span:nth-of-type(1) {
+    -webkit-transform: translateY(16px) rotate(-45deg);
+    transform: translateY(16px) rotate(-45deg);
+  }
+  .nav-button.active span:nth-of-type(2) {
+    opacity: 0;
+  }
+  .nav-button.active span:nth-of-type(3) {
+    -webkit-transform: translateY(-16px) rotate(45deg);
+    transform: translateY(-16px) rotate(45deg);
+  }
+	.logo{
+		margin-left: 0;
+	}
+/*----------------------------------
+	
+	contact
+	
+------------------------------------*/
+	.contact {
+    padding: 64px 0 80px;
+}
+	.contact_title {
+    font-size: 3rem;
+    margin-bottom: 48px;
+	}
+	.contact_sentence {
+    font-size: 1rem;
+    line-height: 20px;
+    width: 60%;
+	}
+	.contact_mail {
+	font-size: 1.4rem;
+    padding-bottom: 32px;
+	}
+	.form_inner{
+		padding:48px 0;
+		margin: 0 20px;
+	}
+/*ーーーーーーーーーーーーーーーーーーーーーー
+	php
+ーーーーーーーーーーーーーーーーーーーーーーー*/
+	
+#formWrap {
+	width:90%;
+	margin:0 auto;
+}
+table.formTable th, table.formTable td {
+	width:auto;
+	display:block;
+}
+table.formTable th {
+	margin-top:5px;
+	border-bottom:0;
+}
+input[type="text"], textarea {
+	width:80%;
+	padding:5px;
+	font-size:110%;
+	display:block;
+}
+input[type="submit"], input[type="reset"], input[type="button"] {
+	display:block;
+	width:100%;
+	height:40px;
+}
+.notice {
+	text-align: inherit;
+    font-size: 1rem;
+    width: 80%;
+    margin: 20px auto;
+}
+	.submit{
+		font-size: 1.2rem;
+		padding: 5px 20px;
+	}
+	
+	/*-----------------
+	
+	footer
+	
+	---------------------*/
+
+		.footer_nav{
+		display: block;
+	}
+
+	
+	
+	
+	
+	
+	
+}
+
